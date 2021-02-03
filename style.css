@@ -18,6 +18,7 @@ body {
   top: 0;
   right: 0;
   background-color: #f7c545;
+  z-index: 3;
 }
 
 .navigation__list {
@@ -71,6 +72,7 @@ body {
   margin: 20px 0 40px 0;
   font-size: 50px;
   font-weight: 500;
+  color: #787878;
 }
 
 .header__content {
@@ -78,15 +80,19 @@ body {
   width: 40vw;
   font-size: 90%;
   letter-spacing: 0.01em;
+  color: #787878;
 }
 
 .info {
+  position: sticky;
+  top: 48px;
   height: calc(15vh);
   background-color: #2a2a2a;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .info__content {
@@ -125,4 +131,41 @@ body {
   color: #ffffff;
   font-size: 70%;
   letter-spacing: 0.01em;
+}
+
+.popup {
+  position: absolute;
+  top: calc(140vh - 40px);
+  z-index: 2;
+  background-color: white;
+  margin-left: calc(50vw - 15vw);
+  height: 1500px;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__title {
+  color: #2a2a2a;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.popup__content {
+  color: #2a2a2a;
+}
+
+.popup__button {
+  background-color: #ffffff;
+  border: 1px solid #787878;
+  color: #787878;
+  margin: 40px auto;
+  padding: 8px 40px;
+  width: 118px;
+  cursor: pointer;
+}
+
+.popup__button:hover {
+  border-color: #2a2a2a;
+  color: #2a2a2a;
 }
