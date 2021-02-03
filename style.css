@@ -51,11 +51,11 @@ body {
 }
 
 .navigation__item:hover {
-  color: #2e3e46;
+  color: #2a2a2a;
 }
 
 .navigation__item--primary:hover {
-  color: #2e3e46;
+  color: #2a2a2a;
 }
 
 .header {
@@ -75,9 +75,36 @@ body {
 
 .header__content {
   text-align: center;
-  width: 38%;
+  width: 40vw;
+  font-size: 90%;
 }
 
 .info {
   height: calc(15vh);
+  background-color: #2a2a2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info__content {
+  color: #ffffff;
+  width: 40vw;
+  text-align: center;
+  font-size: 90%;
+}
+
+.info__button {
+  background-color: #2a2a2a;
+  color: #f7c545;
+  border: 1px solid #f7c545;
+  margin-top: 20px;
+  padding: 8px 40px;
+  cursor: pointer;
+}
+
+.info__button:hover {
+  border-color: #ffffff;
+  color: #ffffff;
 }
